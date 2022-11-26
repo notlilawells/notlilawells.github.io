@@ -1,0 +1,89 @@
+#contact{
+    margin: 4% 4% 0% 4%;
+}
+
+.contact-container{
+    row-gap: 2rem;
+    display: flex;
+    justify-content: center; 
+}
+
+.contact_subtitle{
+    font-family: 'Satoshi', sans-serif;
+    color: #2A2726;
+}
+
+.contact-subheader{
+    font-family: 'Satoshi', sans-serif;
+    margin-right: 5%;
+    padding: 0px;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.botcheck{
+    display: none;
+}
+
+.contact__button{
+    display: block; 
+    color: black;
+    font-size: 1em;
+    padding: .75rem 2.5rem;
+    margin-left: auto;
+    background-color: #80cdc1;
+    font-family: 'Satoshi', sans-serif;
+    border: 3px solid #018571;
+    border-radius: 50px;
+    margin-top: 4%;
+}
+
+.contact__button:hover{
+    opacity: 0.7;
+}
+
+.contact__button:active{
+    opacity: 0.5; 
+}
+
+.contact_inputs{
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    column-gap: 1rem;
+    color: #D3D3D3;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.contact__input{
+    width: 100%; 
+    padding: .8rem; 
+    outline: none;
+    border: 3px solid #80cdc1;
+    margin-bottom: 1rem; 
+    border-radius: .5rem;
+    font-family: 'Satoshi', sans-serif; 
+    font-size: 1rem; 
+}
+
+#result{
+    color: black; 
+}
+
+.checkbox{
+    font-family: 'Satoshi', sans-serif;
+    color: black; 
+    margin-bottom: 4%; 
+    font-size: 1.1rem; 
+}
+
+.checkbox-label{
+    margin-bottom: 5%; 
+}
+
+.checkbox-label em{
+    color: #018571; 
+}

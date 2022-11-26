@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Specifying that the HTML content language is in English  -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Adding an icon library to use in the site later on  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Inputting the main CSS stylesheet -->
+        <link rel = "stylesheet" href = "assets/css/style.css">
+
+        <!-- Inputting the about page CSS stylesheet -->
+        <link rel = "stylesheet" href = "assets/css/about-page.css">
+    
+        <!-- Adding the Satoshi font to use in the site -->
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">        
+        
+        <!-- Adding a page title -->
+        <title>About | LTW</title>
+
+        <!-- Adding in the JavaScript for graphs below-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+        <!-- Inputting a navigation bar  -->
+        <nav role="navigation" class="top-nav">
+            <ul>
+                <li tabIndex=0 title="Home"><a href="index.html" title="Home">Home</a></li>
+                <li nav aria-current=page tabIndex=1 title="About"><a href="about.html" title="About">About</a></li>
+                <li tabIndex=2 title="Projects"><a href="projects.html" title="Projects">Projects</a>
+                    <ul class="pulldown-menu"> 
+                        <li>
+                            <a href="missing-info.html" title="Missing Project Information">Music Analytics</a>
+                        </li>
+                        <li>
+                            <a href="project02.html" title="Project 02">Movies and Relational Databases</a>
+                        </li>
+                        <li>
+                            <a href="missing-info.html" title="Missing Project Information">Food Inspections, Relational Databases & Python</a>
+                        </li>
+                    </ul>
+                </li>
+                <li tabIndex=3 title="Resume"><a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume">Resume</a></li>
+                <li tabIndex=4 title=""><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <h1 class="page-header">about me</h1>
+
+            <!-- Adding in a skills chart -->
+            <div class="chart-text">
+                <h3>Hi, my name's Lila. I'm currently a senior at Northwestern University where I study Sociology, Data Science, and Human Computer Interaction. I'm passionate about solving problems with data and designing solutions that matter with diverse audiences in mind.</h3>
+                <h3>While my major is in a mainly qualitative discipline, my more recent coursework in Data Science and Computer Science has veered into the computational (i.e., I learned how to code, and got pretty good at it!). See the graph below for an overview of my programming and technical skills.</h3> 
+                <h3>After graduation, you can find me in Seattle, Washington, where I'll be joining Amazon Web Services as a Program Manager.</h3>   
+            </div>
+
+            <h2 class='subtitle'>my technical skills at a glance</h2>
+
+            <div>
+                <div class="chart-container">
+                    <canvas id="myChart" class="barchart-size"></canvas>
+                </div>
+            </div>
+
+            <!-- Adding a donut chart for how I spend my time   -->
+            <h2 class='subtitle'>fun in my free time</h2>
+            <div class="chart-container">
+                <div class="chart-text">
+                    <h3>I'm currently a student, so free time isn't usually something I have in spades.</h3>
+                    <h3>That said, I love to spend my time reading, exercising, trying out new restaurants, and spending time with my family and friends.</h3>
+                    <h3>(Note in the graph to the left that a ... well let's just say "significant" amount of my free time is spent binge-watching crime dramas...I'm currently watching NCIS for the third time...aaaaand maybe that piece of information could've went unsaid).</h3>
+                    <button class="chart-button" title="Contact Lila"><a href="contact.html">Contact Lila</a></button>
+                </div>
+                <div>
+                    <canvas id="freetime"></canvas>
+                </div>
+            </div>
+        </main>
+        
+        </body>
+        <!-- Adding a footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <h3 class="footer-title">Lila Wells</h3>
+                <div class="footer-data">
+                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Inputting the JS document -->
+        <script src = "assets/js/skills_chart.js"></script>
+        <script src="assets/js/freetime_chart.js"></script>
+    </body>
+</html>

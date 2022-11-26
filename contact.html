@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Specifying that the HTML content language is in English  -->
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Adding an icon library to use in the site later on  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Inputting the CSS stylesheet -->
+        <link rel = "stylesheet" href = "assets/css/style.css">
+
+        <!-- Inputting the CSS stylesheet for the contact form -->
+        <link rel = "stylesheet" href = "assets/css/contact-form.css">
+
+        <!-- Adding the Satoshi font to use in the site -->
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">        
+        
+        <!-- Adding a page title -->
+        <title>Contact | LTW</title>
+
+    </head>
+
+    <body>
+        <!-- Inputting a navigation bar  -->
+        <nav role="navigation" class="top-nav">
+            <ul>
+                <li tabIndex=0 title="Home"><a href="index.html" title="Home">Home</a></li>
+                <li tabIndex=1 title="About"><a href="about.html" title="About">About</a></li>
+                <li tabIndex=2 title="Projects"><a aria-haspopup="true" aria-expanded="false" href="projects.html" title="Projects">Projects</a>
+                    <ul class="pulldown-menu"> 
+                        <li>
+                            <a href="missing-info.html" title="Missing Project Information">Music Analytics</a>
+                        </li>
+                        <li>
+                            <a href="project02.html" title="Project 02">Movies and Relational Databases</a>
+                        </li>
+                        <li>
+                            <a href="missing-info.html" title="Missing Project Information">Food Inspections, Relational Databases & Python</a>
+                        </li>
+                    </ul>
+                </li>
+                <li tabIndex=3 title="Resume"><a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume">Resume</a></li>
+                <li nav aria-current=page tabIndex=4 title="Contact"><a href="contact.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <h1 class="page-header">contact me</h1>
+            <!-- Adding a section for the contact form -->
+            <section id="contact">
+                <div class="contact-container">
+                    <div class="contact-subheader">
+                        <h3>Interested in my work? Want to collaborate on a project or just want to say hi?</h3>
+                        <h3>Send me a LinkedIn message or fill out this form and I'll get back to you ASAP. In the meantime, check out my socials below!</h3>
+                        <div class="socials-list">
+                            <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin" tabIndex=5></a>
+                            <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram" tabIndex=6></a>
+
+                        </div>
+                    </div>
+
+                    <!-- The actual contact form -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <div class="contact_inputs">
+                            <input type="hidden" name="access_key" value="64474af6-9035-4f0c-845a-c5872bce6ead" />
+                            <input type="hidden" name="subject" value="New Contact Form Submission" />
+                            
+                            <!-- Preventing bots from filling out the form -->
+                            <input type="checkbox" name="botcheck" class="botcheck" />
+                            
+                            <!-- Adding a section to input one's name -->
+                            <input type="text" tabIndex=7 name="name" id="name" placeholder="Name" required class="contact__input" />
+
+                            <!-- Adding a section to input an email -->
+                            <input type="email" tabIndex=8 name="email" id="email" placeholder="Email" required class="contact__input" />
+                            
+                            <!-- Adding a section to input a phone number -->
+                            <input type="tel" tabIndex=9 name="phone" id="phone" placeholder="Phone Number (in the format 123-456-7890)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__input" />
+                            
+                            <!-- Adding a checkbox element to the form -->
+                            <div class="checkbox">
+                                <h4 class="checkbox-label">What's on your mind? <em>(Optional)</em></h4>
+                                <input type="checkbox" tabIndex=10 id="option1" name="Project" value="Project Related">
+                                <label for="option1">Project Related Inquiry</label><br>
+                                <input type="checkbox" tabIndex=11 id="option2" name="Work" value="Work Related">
+                                <label for="option2">Work Related Inquiry</label><br>
+                                <input type="checkbox" tabIndex=12 id="option3" name="Other" value="Other">
+                                <label for="option3">Other</label>
+                            </div>
+                            
+                            <!-- Adding a section for the contact message in the form -->
+                            <textarea rows="5" name="message" tabIndex=13 id="message" placeholder="Your Message" class="contact__input" required></textarea>
+
+                            <!-- Adding a block to display whether the form submittal went through -->
+                            <h4 id="result"></h4>
+
+                            <!-- Adding a submit button -->
+                            <button type="submit" class="contact__button" tabIndex=14>Submit</button>
+                        
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Adding a footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <h3 class="footer-title">Lila Wells</h3>
+                <div class="footer-data">
+                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Inputting the JS document -->
+        <script src = "assets/js/contact.js"></script>
+        <script src= "https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>
