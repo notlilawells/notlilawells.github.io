@@ -23,23 +23,37 @@
     <body>
         <!-- Inputting a navigation bar  -->
         <nav role="navigation" class="top-nav">
-            <ul>
-                <li tabIndex=0 title="Home"><a href="index.html" title="Home">Home</a></li>
-                <li tabIndex=1 title="About"><a href="about.html" title="About">About</a></li>
-                <li nav aria-current=page tabIndex=2 title="Projects"><a href="projects.html" title="Projects">Projects</a>
-                    <ul class="pulldown-menu"> 
-                        <li>
-                            <a href="missing-info.html" title="Project 01">Music Analytics</a></li>
-                        <li>
-                            <a href="project02.html" title="Project 02">Movies and Relational Databases</a>
+            <ul role="list">
+                <li tabIndex=0 title="Home" role="listitem">
+                    <a href="index.html" title="Home Page" role="link">Home</a>
+                </li>
+
+                <li title="About" role="listitem">
+                    <a href="about.html" title="About Page" list="link">About</a>
+                </li>
+
+                <li nav aria-current=page role=listitem title="Projects Page">
+                    <a href="projects.html" title="Link to Projects" role="link">Projects</a>
+                    <ul class="pulldown-menu" role="list"> 
+                        <li role="listitem">
+                            <a href="missing-info.html" title="Music Project" alt="Link to Music Project" role="link">Music Analytics</a></li>
+                        <li role="listitem">
+                            <a href="project02.html" title="Movies Project" alt="Link to Movie Project" role="link ">Movies and Relational Databases</a>
                         </li>
-                        <li>
-                            <a href="missing-info.html" title="Missing Project Information">Food Inspections, Relational Databases & Python</a>
+                        <li role="listitem">
+                            <a href="missing-info.html" title="Food Inspections Project" alt="Food Inspections Project Link" role="link">Food Inspections, Relational Databases & Python</a>
                         </li>
                     </ul>
                 </li>
-                <li tabIndex=3 title="Resume"><a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume">Resume</a></li>
-                <li tabIndex=4 title=""><a href="contact.html" title="Contact">Contact</a></li>
+
+                <li title="Resume Page" role="listitem">
+                    <a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Link to Resume" alt="Resume" role="link">Resume</a>
+                </li>
+
+                <li title="Contact Page" role="listitem">
+                    <a href="contact.html" title="Link to Contact Page" role="link">Contact</a>
+                </li>
+
             </ul>
         </nav>
 
@@ -51,11 +65,11 @@
                     <section class="projects">
 
                         <!-- Project 01 -->
-                        <a href="missing-info.html" tabIndex=5 title="Project 01">
+                        <a href="missing-info.html" title="Project 01">
                             <div class="project">
                                 <h1 class="title">Music Analytics: What Makes a Song Successful?</h1>
                                 <h2 class="topic">Data Science</h2>
-                                <img class="cover" src="assets/pictures/recording-booth.png" alt="Project Image">
+                                <img class="cover" src="assets/pictures/recording-booth.png" alt="Recording Booth"" role="img" aria-label="Image of a recording booth">
                                 <div class="project-info">
                                     <span class="languages">(Python)</span>,
                                     <span class="readtime">8 minute read </span>`
@@ -64,11 +78,11 @@
                         </a>
 
                         <!-- Project 02 -->
-                        <a href="project02.html" tabIndex=6 title="Project 02">
+                        <a href="project02.html" alt="Movie Project" role="link">
                             <div class="project">
                                 <h1 class="title">Building a Movie App: Relational Database Programming</h1>
                                 <h2 class="topic">Relational Databases</h2>
-                                <img class="cover" src="assets/pictures/movies.png" alt="Project Image">
+                                <img class="cover" src="assets/pictures/movies.png" alt="Popcorn" role="img" aria-label="Image of popcorn and a movie">
                                 <div class="project-info">
                                     <span class="languages">(SQL, Python)</span>,
                                     <span class="readtime">5 minute read </span>`
@@ -77,11 +91,11 @@
                         </a>
 
                         <!-- Project 03 -->
-                        <a href="missing-info.html" tabindex=7 title="Missing Project Information">
+                        <a href="missing-info.html" alt="Food Inspections Project" role="link">
                             <div class="project">
                                 <h1 class="title">Building Relational Databases and an Interactive Python App</h1>
                                 <h2 class="topic">Relational Databases</h2>
-                                <img class="cover" src="/assets/pictures/food-inspections.png" alt="Project Image">
+                                <img class="cover" src="/assets/pictures/food-inspections.png" alt="Food Inspections" role="img" aria-label="Image of a food inspection">
                                 <div class="project-info">
                                     <span class="languages">(SQL, Python)</span>
                                     <span class="readtime">8 minute read </span>
@@ -99,8 +113,8 @@
             <div class="footer-container">
                 <h3 class="footer-title">Lila Wells</h3>
                 <div class="footer-data">
-                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" alt="LinkedIn" title="LinkedIn Link" role="link" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lilatalbottwells/" alt="Instagram" title="LinkedIn Link" role="link" class="fa fa-instagram"></a>
                 </div>
             </div>
         </footer>

@@ -98,3 +98,7 @@
 .description-text{
     margin-left: 4%;
 }
+
+.description-text h3{
+    font-size: 1em; 
+}
