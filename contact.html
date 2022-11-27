@@ -85,12 +85,15 @@
                             <input type="checkbox" name="botcheck" class="botcheck" role="checkbox" />
 
                             <!-- Adding a section to input one's name -->
+                            <label class="hidden" for="name">Input Your Name</label>
                             <input type="text" name="name" id="name" placeholder="Name" required class="contact__input" role="textbox" />
 
                             <!-- Adding a section to input an email -->
+                            <label class="hidden" for="email">Input Your Email</label>
                             <input type="email" name="email" id="email" placeholder="Email" required class="contact__input" role="textbox"/>
                             
                             <!-- Adding a section to input a phone number -->
+                            <label class="hidden" for="phone">Input Your Phone</label>
                             <input type="tel" name="phone" id="phone" placeholder="Phone Number (in the format 123-456-7890)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__input" />
                             
                             <!-- Adding a checkbox element to the form -->
@@ -105,6 +108,7 @@
                             </div>
                             
                             <!-- Adding a section for the contact message in the form -->
+                            <label class="hidden" for="message">Input Your Message</label>
                             <textarea rows="5" name="message" id="message" placeholder="Your Message" class="contact__input" required role="textbox"></textarea>
 
                             <!-- Adding a block to display whether the form submittal went through -->

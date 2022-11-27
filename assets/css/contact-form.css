@@ -94,3 +94,7 @@
 .checkbox-label em{
     color: #018571; 
 }
+
+.hidden{
+    visibility: hidden; 
+}
