@@ -20,6 +20,11 @@
     margin-left: 4%;
 }
 
+.chart-text h2{
+    font-size: 1.25em;
+}
+
+
 .barchart-size{
     margin-left: 15%;
     margin-right: 15%;
