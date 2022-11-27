@@ -27,24 +27,36 @@
     <body>
         <!-- Inputting a navigation bar  -->
         <nav role="navigation" class="top-nav">
-            <ul>
-                <li tabIndex=0 title="Home"><a href="index.html" title="Home">Home</a></li>
-                <li tabIndex=1 title="About"><a href="about.html" title="About">About</a></li>
-                <li tabIndex=2 title="Projects"><a aria-haspopup="true" aria-expanded="false" href="projects.html" title="Projects">Projects</a>
-                    <ul class="pulldown-menu"> 
-                        <li>
-                            <a href="missing-info.html" title="Missing Project Information">Music Analytics</a>
+            <ul role="list">
+                <li tabIndex=0 title="Home" role="listitem">
+                    <a href="index.html" title="Home Page" role="link">Home</a>
+                </li>
+
+                <li title="About" role="listitem">
+                    <a href="about.html" title="About Page" list="link">About</a>
+                </li>
+
+                <li nav aria-current=page role=listitem title="Projects Page">
+                    <a href="projects.html" title="Link to Projects" role="link">Projects</a>
+                    <ul class="pulldown-menu" role="list"> 
+                        <li role="listitem">
+                            <a href="missing-info.html" title="Music Project" alt="Link to Music Project" role="link">Music Analytics</a></li>
+                        <li role="listitem">
+                            <a href="project02.html" title="Movies Project" alt="Link to Movie Project" role="link ">Movies and Relational Databases</a>
                         </li>
-                        <li>
-                            <a href="project02.html" title="Project 02">Movies and Relational Databases</a>
-                        </li>
-                        <li>
-                            <a href="missing-info.html" title="Missing Project Information">Food Inspections, Relational Databases & Python</a>
+                        <li role="listitem">
+                            <a href="missing-info.html" title="Food Inspections Project" alt="Food Inspections Project Link" role="link">Food Inspections, Relational Databases & Python</a>
                         </li>
                     </ul>
                 </li>
-                <li tabIndex=3 title="Resume"><a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume">Resume</a></li>
-                <li nav aria-current=page tabIndex=4 title="Contact"><a href="contact.html" title="Contact">Contact</a></li>
+
+                <li title="Resume Page" role="listitem">
+                    <a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Link to Resume" alt="Resume" role="link">Resume</a>
+                </li>
+
+                <li title="Contact Page" role="listitem">
+                    <a href="contact.html" title="Link to Contact Page" role="link">Contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -54,52 +66,52 @@
             <section id="contact">
                 <div class="contact-container">
                     <div class="contact-subheader">
-                        <h3>Interested in my work? Want to collaborate on a project or just want to say hi?</h3>
+                        <h2>Interested in my work? Want to collaborate on a project or just want to say hi?</h2>
                         <h3>Send me a LinkedIn message or fill out this form and I'll get back to you ASAP. In the meantime, check out my socials below!</h3>
+                        
                         <div class="socials-list">
-                            <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin" tabIndex=5></a>
-                            <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram" tabIndex=6></a>
-
+                            <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" alt="Link to LinkedIn" title="LinkedIn Quick Link" role="link" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/lilatalbottwells/" alt="Link to Instagram" title="Instagram Quick Link" role="link" class="fa fa-instagram"></a>
                         </div>
                     </div>
 
                     <!-- The actual contact form -->
-                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form" role="form" arialabel="A form to contact Lila">
                         <div class="contact_inputs">
                             <input type="hidden" name="access_key" value="64474af6-9035-4f0c-845a-c5872bce6ead" />
                             <input type="hidden" name="subject" value="New Contact Form Submission" />
                             
                             <!-- Preventing bots from filling out the form -->
-                            <input type="checkbox" name="botcheck" class="botcheck" />
-                            
+                            <input type="checkbox" name="botcheck" class="botcheck" role="checkbox" />
+
                             <!-- Adding a section to input one's name -->
-                            <input type="text" tabIndex=7 name="name" id="name" placeholder="Name" required class="contact__input" />
+                            <input type="text" name="name" id="name" placeholder="Name" required class="contact__input" role="textbox" />
 
                             <!-- Adding a section to input an email -->
-                            <input type="email" tabIndex=8 name="email" id="email" placeholder="Email" required class="contact__input" />
+                            <input type="email" name="email" id="email" placeholder="Email" required class="contact__input" role="textbox"/>
                             
                             <!-- Adding a section to input a phone number -->
-                            <input type="tel" tabIndex=9 name="phone" id="phone" placeholder="Phone Number (in the format 123-456-7890)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__input" />
+                            <input type="tel" name="phone" id="phone" placeholder="Phone Number (in the format 123-456-7890)" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__input" />
                             
                             <!-- Adding a checkbox element to the form -->
                             <div class="checkbox">
                                 <h4 class="checkbox-label">What's on your mind? <em>(Optional)</em></h4>
-                                <input type="checkbox" tabIndex=10 id="option1" name="Project" value="Project Related">
+                                <input type="checkbox" id="option1" name="Project" value="Project Related" role="checkbox">
                                 <label for="option1">Project Related Inquiry</label><br>
-                                <input type="checkbox" tabIndex=11 id="option2" name="Work" value="Work Related">
+                                <input type="checkbox" id="option2" name="Work" value="Work Related" role="checkbox">
                                 <label for="option2">Work Related Inquiry</label><br>
-                                <input type="checkbox" tabIndex=12 id="option3" name="Other" value="Other">
+                                <input type="checkbox" id="option3" name="Other" value="Other" role="checkbox">
                                 <label for="option3">Other</label>
                             </div>
                             
                             <!-- Adding a section for the contact message in the form -->
-                            <textarea rows="5" name="message" tabIndex=13 id="message" placeholder="Your Message" class="contact__input" required></textarea>
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="contact__input" required role="textbox"></textarea>
 
                             <!-- Adding a block to display whether the form submittal went through -->
                             <h4 id="result"></h4>
 
                             <!-- Adding a submit button -->
-                            <button type="submit" class="contact__button" tabIndex=14>Submit</button>
+                            <button type="submit" class="contact__button" role="button">Submit</button>
                         
                         </div>
                     </form>
