@@ -28,30 +28,45 @@
     <body>
         <!-- Inputting a navigation bar  -->
         <nav role="navigation" class="top-nav">
-            <ul>
-                <li nav aria-current=page tabIndex=0 title="Home"><a href="index.html" title="Home">Home</a></li>
-                <li tabIndex=1 title="About"><a href="about.html" title="About">About</a></li>
-                <li tabIndex=2 title="Projects"><a href="projects.html" title="Projects">Projects</a>
-                    <ul class="pulldown-menu"> 
-                        <li>
-                            <a href="missing-info.html" title="Missing Project Information">Music Analytics</a>
+            <ul role="list">
+                <li nav aria-current=page tabIndex=0 title="Home" role="listitem">
+                    <a href="index.html" title="Home">Home</a>
+                </li>
+
+                <li title="About" role="listitem">
+                    <a href="about.html" alt="About"title="About Page">About</a>
+                </li>
+
+                <li title="Projects" role="listitem"><a href="projects.html" alt="Projects" title="ProjectS Page">Projects</a>
+                    <ul class="pulldown-menu" role="list"> 
+                        <li role="listitem">
+                            <a href="missing-info.html" alt="Project 01" title="Music Analytics Project Page" role="link">Music Analytics</a>
                         </li>
-                        <li>
-                            <a href="project02.html" title="Project 02">Movies and Relational Databases</a>
+                        <li role="listitem">
+                            <a href="project02.html" alt="Project 02" title="Movies Project Page" role="link">Movies and Relational Databases</a>
                         </li>
-                        <li>
-                            <a href="missing-info.html" title="Missing Project Information">Food Inspections, Relational Databases & Python</a>
+                        <li role="listitem">
+                            <a href="missing-info.html" alt="Project 03" title="Food Inspections Project Page" role="link">Food Inspections, Relational Databases & Python</a>
                         </li>
                     </ul>
                 </li>
-                <li tabIndex=3 title="Resume"><a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume">Resume</a></li>
-                <li tabIndex=4 title=""><a href="contact.html" title="Contact">Contact</a></li>
+
+                <li title="Resume" role="listitem" alt="Link to Resume">
+                    <a href="https://drive.google.com/file/d/1u2G3bhOdjb0_P2zDtx0MJj4CSKIXdWAs/view?usp=share_link" title="Resume Link" role="link">Resume</a>
+                </li>
+
+                <li alt="Contact" title="Contact Page" role="listitem">
+                    <a href="contact.html" title="Contact Page Link" role="link">Contact</a>
+                </li>
             </ul>
         </nav>
+
         <main class="main-content">
             <h1 class="page-header">hi, my name's Lila</h1>
             <div class="hello-button-div">
-                <button class="hello-button"><a href='contact.html'>say hello </a></button>
+                <a href='contact.html' role="link" alt="Say Hi Link" title="Quick Contact Link">
+                    <button class="hello-button" role="button" title="Say Hi Button">say hello</button>
+                </a>
             </div>
 
             <div>
@@ -59,18 +74,18 @@
 
                 <section class="showcase">
                     <!-- Adding my first showcase project -->
-                    <a href="project02.html" tabIndex=5 title="Project 02">
+                    <a href="project02.html" title="Project 02">
                         <div class="showcase-project">
                             <h1 class="title">Building a Movie App: Relational Database Programming in SQL and Python</h1>
                             <h2 class="topic">Relational Databases</h2>
 
                             <!-- Adding a description to the showcase project -->
                             <div class="showcase-description">
-                                <div>
-                                    <img class="cover" src="assets/pictures/movies.png" alt="Project Image">
+                                <div role="img" aria-label="Image of a popcorn bowl and a movie screen">
+                                    <img class="cover" src="assets/pictures/movies.png" alt="Popcorn">
                                 </div>
                                 <div class="description-text">
-                                    <h4>Working with a relational database to create an interactive Python application and interact with database contents.</h4>
+                                    <h3>Working with a relational database to create an interactive Python application and interact with database contents.</h3>
                                 </div>
                             </div>
 
@@ -83,18 +98,18 @@
                     </a>
 
                     <!-- Adding my second showcase project -->
-                    <a href="project01.html" tabIndex=5 title="Project 02">
+                    <a href="project01.html" title="Project 01">
                         <div class="showcase-project">
                             <h1 class="title">Music Analytics: What Makes a Song Successful? An Exploratory Data Analysis</h1>
                             <h2 class="topic">Data Science</h2>
 
                             <!-- Adding a description to the showcase project -->
                             <div class="showcase-description">
-                                <div>
-                                    <img class="cover" src="assets/pictures/recording-booth.png" alt="Project Image">
+                                <div role="img" aria-label="Image of a recording booth">
+                                    <img class="cover" src="assets/pictures/recording-booth.png" alt="Recording Booth">
                                 </div>
                                 <div class="description-text">
-                                    <h4>In this project, I use Python and a Spotify dataset via Kaggle to investigate factors related to a song's popularity (i.e., what makes a song successful?).</h4>
+                                    <h3>In this project, I use Python and a Spotify dataset via Kaggle to investigate factors related to a song's popularity (i.e., what makes a song successful?).</h3>
                                 </div>
                             </div>
 
@@ -114,8 +129,8 @@
             <div class="footer-container">
                 <h3 class="footer-title">Lila Wells</h3>
                 <div class="footer-data">
-                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" class="fa fa-linkedin"></a>
-                    <a href="https://www.instagram.com/lilatalbottwells/" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/lila-wells-4a336a1a9/" alt="LinkedIn" title="LinkedIn Link" role="link" class="fa fa-linkedin"></a>
+                    <a href="https://www.instagram.com/lilatalbottwells/" alt="Instagram" title="LinkedIn Link" role="link" class="fa fa-instagram"></a>
                 </div>
             </div>
         </footer>
