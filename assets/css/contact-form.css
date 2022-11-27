@@ -61,6 +61,10 @@
     font-family: 'Satoshi', sans-serif;
 }
 
+.contact_inputs label{
+    color: black;
+}
+
 .contact__input{
     width: 100%; 
     padding: .8rem; 
