@@ -30,6 +30,10 @@ nav.project-title li{
     font-family: 'Satoshi', sans-serif;
 }
 
+.main-content-project-page h1{
+    font-size: 1.125em; 
+}
+
 .back-button-div{
     display: flex; 
 }
@@ -74,6 +78,10 @@ nav.project-title li{
 
 .db-info-text{
     margin-right: 10%;
+}
+
+.db-info-text h2{
+    font-size: 1.125em;
 }
 
 .cmd-li{

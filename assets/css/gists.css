@@ -47,3 +47,8 @@ body .gist .gist-file {
     display: none;
   }
 
+  body .gist .pl-v{
+    color: black;
+  }
+
+
