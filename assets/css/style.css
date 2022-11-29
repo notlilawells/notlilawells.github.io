@@ -1,7 +1,6 @@
 /* ============== Navigation Bar ============== */ 
 nav.top-nav{
     background-color: #018571;
-    background-color: white;
     border-bottom: .25em solid white;
     position: fixed;
     top: 0px;
