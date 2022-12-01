@@ -50,7 +50,11 @@
             <h3>Each cleaned <em>CSV</em> file represented a future table in the database. When using <em>Azure's</em> Import Wizard commands, I specified several Foreign and Primary key constraints within each table (forming relationships between them).</h3>
             
             <h2 class='subtitle'>the database at a glance (entity relationship diagrams)</h2>
+            <h3>See the entity relationship diagram I created for the <em>Food Inspections</em> database below. You will see that, within the database itself, most tables have a one-to-many relationship with those adjascent to them.</h3>
             
+            <figure>
+                <img src="assets/pictures/project04.drawio.png" class="db-pic" alt="Food Inspections DB Entity Relationship Diagram" role="img" arialabel="An entity relationship diagram with an overview of how the Food Inspections database is organized">
+            </figure>
             <h2 class='subtitle'>the commands</h2>
             <h3>The commands I implemented were labeled 0 through 9. They are as follows:</h3>
             
@@ -58,24 +62,25 @@
             <ul role="list">
                 <li role="listitem" class="cmd-li">Command 0: Outputs information on the database itself (i.e., how many stores and inspections, where the data comes from, where you can learn more about the data source). </li>
                 <li role="listitem" class="cmd-li">Command 1: Outputs the number of inspections and the number of food establishments in the database.</li>
-                <li role="listitem" class="cmd-li">Command 2: Here, you input the movie name and the program outputs the ID, title, and year of release for movies with similar or the same title as your input. If more than 20 movies match your input, the first 20 will be displayed initially, then you will be prompted to display more results if you so wish.</li>
-                <li role="listitem" class="cmd-li">Command 3: Here, you input a movie ID (ex. 603) and the program outputs detailed information about that movie (title, tagline, revenue, budget, release year, etc.) </li>
-                <li role="listitem" class="cmd-li">Command 4: Here, you input 'N' (the number of movies you want outputted) as well as the minimum number of reviews for the movies in your results. The program outputs the top <em>N</em> movies with at least that the minimum number of reviews (in descending order by average rating)</li>
-                <li role="listitem" class="cmd-li">Command 5: Here, you can look up movies by genre. The program returns a list of movie IDs and titles in ascending order by movie ID. Like in Command 2, you have the option to display multiple pages of results (in batches of 20 movies at a time). </li>
-                <li role="listitem" class="cmd-li">Command 6: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
-                <li role="listitem" class="cmd-li">Command 7: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
-                <li role="listitem" class="cmd-li">Command 8: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
-                <li role="listitem" class="cmd-li">Command 9: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
+                <li role="listitem" class="cmd-li">Command 2: Outputs the percent of inspections in the database by inspection result.</li>
+                <li role="listitem" class="cmd-li">Command 3: Here, you input a store type (ex. <em>Restaurant, Grocery Store, or Daycare</em>) and the program outputs the store ID, name, zip code and number of inspections for stores in that type.</li>
+                <li role="listitem" class="cmd-li">Command 4: Here, you input a store type (ex. <em>Restaurant, Grocery Store, or Daycare</em>) and the program outputs the store ID, name, zip code, and inspection results for stores in that type that failed inspection.</li>
+                <li role="listitem" class="cmd-li">Command 5: Here, you input a store ID and the program outputs information on that store and its inspections. </li>
+                <li role="listitem" class="cmd-li">Command 6: Here, you input a Chicago zip code, and the program outputs information on stores that failed inspection in that zip code.</li>
+                <li role="listitem" class="cmd-li">Command 7: Here, you input a Chicago zip code, and the program outputs information on stores that passed inspection in that zip code.</li>
+                <li role="listitem" class="cmd-li">Command 8: Here, you input a Chicago zip code, and the program outputs store types in that zip code (i.e. <em>restaurants, grocery stores, hospitals, daycares</em>) and what percentage of store types in that zip code passed inspection.</li>
+                <li role="listitem" class="cmd-li">Command 9: Here, you input a store ID and the program outputs what percent of that stores inspections that store passed, failed, passed with conditions, etc.</li>
             </ul>
 
             <!-- Embedding the interactive final product of the project -->
             <div>
-                <h3 class='try-out-project'><em>Try out my project live in the window below!</em></h3>
+                <h3 class='try-out-project'><em>Try out my project live in the window below! Note that you might have to click Run a few times for the database to connect. That's okay! I am using the free version of Microsoft Azure, so the database is not always running (pressing run a few times "wakes it up")</h3>
                 <iframe class="iframe" frameborder="0" width="100%" height="500px" src="https://replit.com/@LilaWells/Food-Inspections-App?embed=true"></iframe>  
             </div>
 
         </main>
     </body>
+
     <!-- Adding a footer -->
     <footer class="footer">
         <div class="footer-container">
