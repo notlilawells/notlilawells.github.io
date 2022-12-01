@@ -24,7 +24,7 @@
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">        
         
         <!-- Adding a page title -->
-        <title>Project 02</title>
+        <title>Project 03</title>
         <link rel="icon" type="image/x-icon" href="assets/pictures/favicon.ico">
 
     </head>
@@ -32,7 +32,7 @@
     <body>
         <nav role="navigation" class="project-title">
             <ul role="list">
-                <li tabIndex=0 role="listitem">Building a Movie App: Relational Database Programming in SQL and Python</li>
+                <li tabIndex=0 role="listitem">Building Relational Databases and an Interactive Python App</li>
                 
                 <li role="listitem">
                     <div class="back-button-div">
@@ -44,6 +44,35 @@
         </nav>
 
         <main class="main-content-project-page">
+            <h1>I've been working with relational databases for some time now, so I figured it was time to try creating a database myself (with an interactive Python application to match!)</h1>
+            <h3>When searching for suitable datasets to convert into database form, I stumbled across a dataset by the the City of Chicago. The dataset (originally in <em>CSV</em> format) contained information derived from inspections of restaurants and other food establishments in Chicago from January 1, 2010 to the present. Inspections were performed by staff from the Chicago Department of Public Health Protection Program using a standardized procedure. The results of the inspection are inputted into a dataset file, then reviewed and approved by a State of Illinois Licensed Environmental Health Practitioner (LEHP)</h3>
+            <h3>The uncleaned dataset had over 600,000 observations across 20+ variables. So, I downloaded the file in <em>CSV</em> format and cleaned it with Python (i.e., removing duplicates and null values as well as outliers). I then divided the dataset into seven <em>CSV</em> files, and used <em>Microsoft Azure's</em> Import Wizard commands to refine and upload the <em>CSV</em> files to the cloud into a new database (which I <em>very creatively</em> called Food Food-Inspections</h3>
+            <h3>Each cleaned <em>CSV</em> file represented a future table in the database. When using <em>Azure's</em> Import Wizard commands, I specified several Foreign and Primary key constraints within each table (forming relationships between them).</h3>
+            
+            <h2 class='subtitle'>the database at a glance (entity relationship diagrams)</h2>
+            
+            <h2 class='subtitle'>the commands</h2>
+            <h3>The commands I implemented were labeled 0 through 9. They are as follows:</h3>
+            
+            <!-- Adding information on each command for the project -->
+            <ul role="list">
+                <li role="listitem" class="cmd-li">Command 0: Outputs information on the database itself (i.e., how many stores and inspections, where the data comes from, where you can learn more about the data source). </li>
+                <li role="listitem" class="cmd-li">Command 1: Outputs the number of inspections and the number of food establishments in the database.</li>
+                <li role="listitem" class="cmd-li">Command 2: Here, you input the movie name and the program outputs the ID, title, and year of release for movies with similar or the same title as your input. If more than 20 movies match your input, the first 20 will be displayed initially, then you will be prompted to display more results if you so wish.</li>
+                <li role="listitem" class="cmd-li">Command 3: Here, you input a movie ID (ex. 603) and the program outputs detailed information about that movie (title, tagline, revenue, budget, release year, etc.) </li>
+                <li role="listitem" class="cmd-li">Command 4: Here, you input 'N' (the number of movies you want outputted) as well as the minimum number of reviews for the movies in your results. The program outputs the top <em>N</em> movies with at least that the minimum number of reviews (in descending order by average rating)</li>
+                <li role="listitem" class="cmd-li">Command 5: Here, you can look up movies by genre. The program returns a list of movie IDs and titles in ascending order by movie ID. Like in Command 2, you have the option to display multiple pages of results (in batches of 20 movies at a time). </li>
+                <li role="listitem" class="cmd-li">Command 6: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
+                <li role="listitem" class="cmd-li">Command 7: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
+                <li role="listitem" class="cmd-li">Command 8: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
+                <li role="listitem" class="cmd-li">Command 9: Here, you input a movie ID and review, and the program inserts that review into the database. </li>
+            </ul>
+
+            <!-- Embedding the interactive final product of the project -->
+            <div>
+                <h3 class='try-out-project'><em>Try out my project live in the window below!</em></h3>
+                <iframe class="iframe" frameborder="0" width="100%" height="500px" src="https://replit.com/@LilaWells/Food-Inspections-App?embed=true"></iframe>  
+            </div>
 
         </main>
     </body>
