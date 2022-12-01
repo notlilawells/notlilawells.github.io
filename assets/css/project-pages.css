@@ -84,10 +84,6 @@ nav.project-title li{
     font-size: 1.25em;
 }
 
-.description-h2{
-    font-size: 1.25em;
-}
-
 .cmd-li{
     margin-bottom: 3%;
     font-size:large;
@@ -95,4 +91,36 @@ nav.project-title li{
 
 .caption{
     color: rgb(75, 75, 75);
+}
+
+.data-button-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.data-button-div a{
+    color: black;
+    text-decoration: none;
+}
+
+.data-button{
+    background-color: #80cdc1;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1.2em;
+    border: 3px solid #018571;
+    border-radius: 50px;
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-button:hover{
+    opacity: 0.7;
+}
+
+.data-button:active{
+    opacity: 0.5;
 }

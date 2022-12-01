@@ -50,12 +50,20 @@
             <h3>The uncleaned dataset had over 600,000 observations across 20+ variables. So, I downloaded the file in <em>CSV</em> format and cleaned it with Python (i.e., removing duplicates and null values as well as outliers). I then divided the dataset into seven <em>CSV</em> files, and used <em>Microsoft Azure's</em> Import Wizard commands to refine and upload the <em>CSV</em> files to the cloud into a new database (which I <em>very creatively</em> called Food Food-Inspections</h3>
             <h3>Each cleaned <em>CSV</em> file represented a future table in the database. When using <em>Azure's</em> Import Wizard commands, I specified several Foreign and Primary key constraints within each table (forming relationships between them).</h3>
             
+            <!-- Adding a button to route to the data source -->
+            <div class="data-button-div">
+                <a href='https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5' title="Data Source" role="link">
+                    <button class="data-button" title="Link to Data Source" role="button">see the data source</button>
+                </a>
+            </div>
+            
             <h2 class='subtitle'>the database at a glance (entity relationship diagrams)</h2>
             <h3>See the entity relationship diagram I created for the <em>Food Inspections</em> database below. You will see that, within the database itself, most tables have a one-to-many relationship with those adjascent to them.</h3>
-            
+
             <figure>
                 <img src="assets/pictures/project04.drawio.png" class="db-pic" alt="Food Inspections DB Entity Relationship Diagram" role="img" arialabel="An entity relationship diagram with an overview of how the Food Inspections database is organized">
             </figure>
+
             <h2 class='subtitle'>the commands</h2>
             <h3>The commands I implemented were labeled 0 through 9. They are as follows:</h3>
             
